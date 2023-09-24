@@ -1,7 +1,13 @@
+import ArticlesList from "./components/ArticlesList/ArticlesList";
 import Header from "./components/Header"
 
 const App = () => {
-  return <Header />
+  return (
+    <>
+      <Header />
+      <ArticlesList />
+    </>
+  );
 }
 
 export default App
