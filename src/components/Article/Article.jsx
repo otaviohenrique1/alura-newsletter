@@ -25,7 +25,7 @@ const Article = ({ title, text, tags, image, alt }) => {
             return (
               <p
                 key={index}
-                className="text-alura-200 dark:text-gray-400"
+                className="text-alura-200 dark:text-gray-400 line-clamp-2 sm:line-clamp-none"
               >{content}</p>
             );
           })
