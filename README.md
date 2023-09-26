@@ -1,8 +1,8 @@
-# React + Vite
+# alura-newsletter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto feito no curso React com TailwindCSS: estilizando componentes
 
-Currently, two official plugins are available:
+## Scripts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- npm install => Instala os pacotes
+- npm run dev => Inicia a aplicação

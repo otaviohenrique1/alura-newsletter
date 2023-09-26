@@ -7,12 +7,12 @@ const App = () => {
   const [user, setUser] = useState()
   const hasUser = Boolean(user);
   return (
-    <>
+    <div className="h-screen">
       <Header user={user} />
       {hasUser && <ArticlesList />} {/* Lista exibida se o hasUser for true */}
       {/* <ArticlesList /> */}
       {hasUser || <Form onSubmit={setUser} />} {/* Form exibido se o hasUser for false  */}
-    </>
+    </div>
   );
 }
 
