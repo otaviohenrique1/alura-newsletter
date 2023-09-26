@@ -9,8 +9,12 @@ const Article = ({ title, text, tags, image, alt }) => {
             return (
               <span
                 key={tag}
-                className="bg-alura-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold uppercase hover:bg-alura-200 hover:scale-110"
+                className="alura-tag"
               >{tag}</span>
+              // <span
+              //   key={tag}
+              //   className="bg-alura-100 dark:bg-dark-100 px-4 py-1 rounded-full text-gray-200 text-xs font-bold uppercase hover:bg-alura-200 hover:scale-110"
+              // >{tag}</span>
             );
           })
         }
