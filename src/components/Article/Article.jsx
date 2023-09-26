@@ -3,7 +3,7 @@ const Article = ({ title, text, tags, image, alt }) => {
   return (
     <div className="p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl sm:shadow-lg gap-2 flex flex-col items-center">
       <h3 className="text-xl text-alura-200 dark:text-gray-200 font-bold">{title}</h3>
-      <div className="w-full flex flex-row justify-end gap-2 pr-5">
+      <div className="w-full sm:flex flex-row justify-end gap-2 pr-5 hidden ">
         {
           tags.map((tag) => {
             return (

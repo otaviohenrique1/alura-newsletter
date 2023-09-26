@@ -1,11 +1,17 @@
+import { useState } from "react";
 import ArticlesList from "./components/ArticlesList/ArticlesList";
-import Header from "./components/Header"
+import Header from "./components/Header/Header"
+import Form from "./components/Form/Form";
 
 const App = () => {
+  const [user, setUser] = useState()
+  const hasUser = Boolean(user);
   return (
     <>
-      <Header />
-      <ArticlesList />
+      <Header user={user} />
+      {hasUser && <ArticlesList />} {/* Lista exibida se o hasUser for true */}
+      {/* <ArticlesList /> */}
+      {hasUser || <Form onSubmit={setUser} />} {/* Form exibido se o hasUser for false  */}
     </>
   );
 }
